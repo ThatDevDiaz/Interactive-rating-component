@@ -10,7 +10,7 @@ I've gotten the html/css design for the first page state completed and i'll subm
 
 After a few weeks of learning and implementing JS in a much smaller scope, I was finally able to make the page reactive.
 
-Originally, I was going to make 2 seperate html pages that would load according to whatever function was being executed at the time but this brought problems which on a larger scale might affect load times and load functionality.
+Originally, I was going to make 2 separate html pages that would load according to whatever function was being executed at the time but this brought problems which on a larger scale might affect load times and load functionality.
 
 To resolve this, I created a div element that reacts to the onclick function and will replace the current showing div. This keeps everything on 1 html document maximizing load speed and also allowing the function to run linear with minimal files.
 

@@ -58,7 +58,7 @@ document.querySelector(`.button-five`).addEventListener(`click`, function () {
   }
 });
 
-// the load page function was placed at the end because it's the last action being performed on this project and will allow the other previous eventhandlers to update the information prior to it being loaded.
+// the load page function was placed at the end because it's the last action being performed on this project and will allow the other previous eventHandlers to update the information prior to it being loaded.
 
 function loadPage() {
   document.querySelector(`.container`).style.display = `none`;
