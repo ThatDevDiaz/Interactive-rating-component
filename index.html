@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <container class="container">
+      <div class="ratingPage">
+        <div class="content">
+          <img src="./images/icon-star.svg" class="star" />
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+
+        <ul class="ratings">
+          <li class="rating-one">
+            <button class="button button-one">1</button>
+          </li>
+          <li class="rating-two">
+            <button class="button button-two">2</button>
+          </li>
+          <li class="rating-three">
+            <button class="button button-three">3</button>
+          </li>
+          <li class="rating-four">
+            <button class="button button-four">4</button>
+          </li>
+          <li class="rating-five">
+            <button class="button button-five">5</button>
+          </li>
+        </ul>
+      </div>
+      <!-- I created an onclick button where JS will execute a function. This function will then hide the original div container and show the second container which is the thank you page.
+
+The reasoning behind separating the containers was so I can minimize the amount of files and code needed to load this and execute all events as fast as possible-->
+      <button class="submit-button" value="script" onclick="loadPage()">
+        SUBMIT
+      </button>
+    </container>
+    <div class="thank-you-container">
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="thank you illustration"
+        class="thank-you-illustration"
+      />
+      <h1 class="thank-you">Thank you!</h1>
+      <h2 class="selected-rating">You selected X out of 5</h2>
+      <p class="thank-you-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Cesar Diaz</a>.
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>

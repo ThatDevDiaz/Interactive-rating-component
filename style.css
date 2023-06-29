@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Overpass;
+  src: url(./Fonts/Overpass-VariableFont_wght.ttf);
+}
+
+body {
+  display: flex;
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Overpass;
+  color: white;
+}
+
+.container {
+  display: flex;
+  background: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(216, 19%, 11%)
+  );
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 400px;
+  height: 400px;
+}
+
+.star {
+  background-color: hsl(211, 19%, 23%);
+  background-size: 125%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 4%;
+  margin: 5px;
+  border: 50%;
+  border-color: hsl(213, 19%, 18%);
+  border-style: solid 1px;
+}
+
+.content {
+  width: 325px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 20px;
+  padding-left: 0px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  width: 330px;
+  height: 45px;
+  border-radius: 50px;
+  border-style: solid 1px;
+  border-color: hsl(25, 97%, 53%);
+  margin-bottom: 0px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+
+.button {
+  background-color: hsl(213, 19%, 18%);
+  color: hsla(217, 12%, 63%, 0.801);
+  font-weight: 700;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border-color: hsl(213, 19%, 18%);
+  border-style: solid;
+}
+
+h1 {
+  margin-bottom: 0px;
+  font-size: 27px;
+}
+
+p {
+  color: hsla(217, 12%, 63%, 0.801);
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: WHITE;
+  background-color: hsla(217, 12%, 63%, 0.801);
+  border-color: hsl(213, 19%, 18%);
+}
+
+button:active,
+.button:focus {
+  color: white;
+  background-color: #ffa500;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: orange;
+  border-color: white;
+}
+
+.thank-you-container {
+  display: flex;
+  background: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(216, 19%, 11%)
+  );
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+}
+
+.thank-you-text {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.selected-rating {
+  background-color: hsl(213, 18%, 22%);
+  border-radius: 20px;
+  color: rgba(234, 108, 18, 0.813);
+  font-size: 14px;
+  background-size: 1;
+}
